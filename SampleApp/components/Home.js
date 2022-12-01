@@ -43,10 +43,10 @@ const Navigation = useNavigation();
       <View
         style={{backgroundColor: '#BAD90E', height: 40, alignItems: 'center',margin:15}}>
         <Text style={{fontSize: 20, margin: 5, fontWeight: 'bold'}}>
-          Wellcome {route.params.email} 
+          Wellcome {data.name} 
         </Text>
       </View>
-      <View style={styles.btn}>
+      <View>
         <View style={styles.btns}>
         <Button  color ='red'  title='Job Post' onPress={goPostJob}/>
         </View>
@@ -54,8 +54,7 @@ const Navigation = useNavigation();
         <Button title='Jobs' onPress={getUserJob} />
         </View>
       </View>
-      <Text style={{fontSize: 20, margin: 10, fontWeight: 'bold',backgroundColor:'#13D90E'}}>Completed Task:                                    {data.jobCount}</Text>
-
+      <Text style={{fontSize: 20, margin: 10, fontWeight: 'bold', color: '#306754',backgroundColor:'#728FCE'}}>Completed Task                                     {data.jobCount}</Text>
     </View>
   );
 }
